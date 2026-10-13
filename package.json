@@ -1,0 +1,12 @@
+{
+  "name": "toeic-990-ai",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "python3 -m server.app",
+    "test": "python3 -m unittest discover -s tests -v",
+    "check": "node --check app/main.js && node --check app/icons.js && python3 -m py_compile server/app.py server/content.py server/engine.py server/generation.py",
+    "audio": "python3 scripts/generate_audio.py"
+  }
+}
